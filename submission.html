@@ -13,33 +13,54 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
 
-    <body class="bg-gray-50 p-6 md:p-12">
+    <body class="bg-gray-50 p-4 sm:p-6 md:p-12">
 
         <section class="max-w-6xl mx-auto">
-            <header class="mb-10 text-center md:text-left">
-                <h1 class="text-3xl font-black text-gray-900 tracking-tight">MESSAGE LOG</h1>
-            </header>
-
-            <div class="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
-                <table class="w-full text-left border-collapse">
-                    <thead>
-                        <tr class="bg-gray-50 border-b border-gray-200">
-                            <th class="px-6 py-4 text-xs font-bold text-gray-400 uppercase">Timestamp</th>
-                            <th class="px-6 py-4 text-xs font-bold text-gray-400 uppercase">Sender</th>
-                            <th class="px-6 py-4 text-xs font-bold text-gray-400 uppercase">Email</th>
-                            <th class="px-6 py-4 text-xs font-bold text-gray-400 uppercase">Message</th>
-                        </tr>
-                    </thead>
-                    <tbody id="submissions-list" class="divide-y divide-gray-100">
-                        
-                    </tbody>
-                </table>
-                
-                <div id="empty-state" class="hidden py-20 text-center">
-                    <p class="text-gray-400 italic font-medium">Your inbox is currently empty.</p>
-                </div>
+          <header class="mb-8 md:mb-10 text-center md:text-left">
+            <h1 class="text-2xl sm:text-3xl font-black text-gray-900 tracking-tight">
+              MESSAGE LOG
+            </h1>
+          </header>
+      
+          <div class="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+      
+            <!-- Scroll wrapper for mobile -->
+            <div class="overflow-x-auto">
+              <table class="w-full min-w-[640px] text-left border-collapse">
+                <thead>
+                  <tr class="bg-gray-50 border-b border-gray-200">
+                    <th class="px-4 sm:px-6 py-4 text-xs font-bold text-gray-400 uppercase">
+                      Timestamp
+                    </th>
+                    <th class="px-4 sm:px-6 py-4 text-xs font-bold text-gray-400 uppercase">
+                      Sender
+                    </th>
+      
+                    <!-- Hidden on mobile -->
+                    <th class="hidden sm:table-cell px-6 py-4 text-xs font-bold text-gray-400 uppercase">
+                      Email
+                    </th>
+      
+                    <th class="px-4 sm:px-6 py-4 text-xs font-bold text-gray-400 uppercase">
+                      Message
+                    </th>
+                  </tr>
+                </thead>
+      
+                <tbody id="submissions-list" class="divide-y divide-gray-100">
+                  <!-- rows go here -->
+                </tbody>
+              </table>
             </div>
+      
+            <div id="empty-state" class="hidden py-16 sm:py-20 text-center">
+              <p class="text-gray-400 italic font-medium">
+                Your inbox is currently empty.
+              </p>
+            </div>
+          </div>
         </section>
-        
-    </body>
+      
+      </body>
+      
 </html>
