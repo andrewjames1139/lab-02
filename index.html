@@ -14,67 +14,44 @@
 </head>
 <body>
     <header>
-      <header>
-        <nav class="fixed top-0 z-[1000] w-full bg-white/15 border-b border-white/40">
-          <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
-      
-            <!-- Logo -->
-            <div class="logo">
-              <img src="logo.png" alt="Logo" class="w-[45px] h-auto">
-            </div>
-      
-            <!-- Navigation links -->
-            <div class="flex gap-8 flex-wrap">
-              <a href="#home" class="text-base font-medium whitespace-nowrap no-underline">
-                HOME
-              </a>
-              <a href="#aboutmee" class="text-base font-medium whitespace-nowrap no-underline">
-                ABOUT
-              </a>
-              <a href="#myproject" class="text-base font-medium whitespace-nowrap no-underline">
-                PROJECT
-              </a>
-              <a href="#contact" class="text-base font-medium whitespace-nowrap no-underline">
-                CONTACT
-              </a>
-            </div>
-      
-          </div>
-        </nav>
-      </header>
-      
+            <nav class="navigation-bar">
+                <div class="navigation">
+                    <div class="logo">
+                        <img src="logo.png" class="logo-img">
+                    </div>
+                    <div class="navigate">
+                    <a class="a" href="#hero">HOME</a>
+                    <a class="a" href="#aboutmee">ABOUT</a>
+                    <a class="a" href="#myproject">PROJECT</a>
+                    <a class="a" href="#mycontact">CONTACT</a>
+                    </div>
+                </div>
+            </nav>
     </header>
     <main class="mainpage" id="mainpage">
-      <section id="hero" class="min-h-screen flex items-center px-6 text-[blanchedalmond]">
-        <div class="w-full max-w-[1200px] mx-auto mt-40 flex flex-col lg:flex-row items-center justify-between gap-12">
-      
-          <div class="flex-1 space-y-4">
-            <p class="text-base sm:text-lg">
-              Hi! I'm <strong>James Andrew De Castro</strong>
-            </p>
-      
-            <p class="font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight">
-              Web Developer. UI/UX Designer.
-            </p>
-      
-            <p class="max-w-xl text-sm sm:text-base leading-relaxed">
-              I’m a Web Developer and UI/UX Designer who builds clean, responsive, and user-focused digital experiences.
-              I enjoy turning ideas into functional websites through thoughtful design and efficient code.
-              With a strong eye for detail and usability, I aim to create interfaces that are both visually appealing and easy to use.
-            </p>
-          </div>
-
-          <div class="flex-1 flex justify-center">
-            <img
-              src="me.jpg"
-              alt="James portrait"
-              class="w-56 sm:w-64 lg:w-72 h-auto rounded-xl"
-            />
-          </div>
-      
+      <section class="home" id="hero">
+        <div class="parent">
+            
+            <div class="self-introduction">
+                <div class="flexbox-item1">
+                    <p> Hi! I'm <strong>James Andrew De Castro</strong></p>
+                    <p>
+                        <strong>
+                            Web Developer. UI/UX Designer.
+                        </strong>
+                    </p>
+                </div>
+                <div class="flexbox-item2">
+                    <p>
+                        I’m a Web Developer and UI/UX Designer who builds clean, responsive, and user-focused digital experiences. I enjoy turning ideas into functional websites through thoughtful design and efficient code. With a strong eye for detail and usability, I aim to create interfaces that are both visually appealing and easy to use.
+                    </p>
+            </div>
+            </div>
+            <div class="picture">
+                <img src="me.jpg" style="width: 250px;height:300px;">
+            </div>
         </div>
-      </section>
-      
+    </section>
       
     <div id="aboutmee">
     <div class="section_divider1"></div>
@@ -219,6 +196,10 @@
                   </div>
             </div>
           </section>
+
+          <div id="mycontact">
+            <div class="section_divider3"></div>
+          </div>
 
           <section
           id="contact"
